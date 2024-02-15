@@ -15,8 +15,6 @@ surface area of a drawn location on the 3D model.
 Contents
 --------
 .. toctree::
-   :maxdepth: 5
-   :caption: Contents:
 
    modules
 
