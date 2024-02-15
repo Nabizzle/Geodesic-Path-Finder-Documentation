@@ -58,8 +58,6 @@ class GeodesicPath():
         Finds the path between the start and end vertex
     load_data(data)
         Takes an Nx4 numpy array and converts it to start and end points
-    load_mesh()
-        Loads in the mesh and creates the geodesic solver
     uv_to_vertex(centroid_x, centroid_y, image_x_size, image_y_size)
         Converts location drawing pixel value to 3D vertex location
     '''
@@ -183,15 +181,6 @@ class GeodesicPath():
         ------
         TypeError
             If the data is not a numpy array, this function will not work
-        '''
-        pass
-
-    def load_mesh(self) -> None:
-        '''
-        Loads in the mesh and creates the geodesic solver
-
-        Loads in mesh data based on the class attributes for the mesh and
-        creates a distance and path solver for the mesh
         '''
         pass
 
