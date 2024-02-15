@@ -211,7 +211,7 @@ def load_mesh(mesh_name: str,
     The solvers created here are used to find the geodesic path, i.e. the
     shortest path between any two points. This is done using the Heat Method
     [#Crane]_. A solver for the path between these two points is also made that
-    uses edge flips to show the path on the mesh [#2]_. Note that this path
+    uses edge flips to show the path on the mesh [#Sharp]_. Note that this path
     may not be the shortest path, just a demonstration.
 
     References
