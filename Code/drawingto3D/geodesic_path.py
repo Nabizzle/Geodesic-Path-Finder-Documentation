@@ -125,11 +125,11 @@ class GeodesicPath():
         -----
         The solvers here uses finds the geodesic distance, i.e. the
         shortest distance between any two points that goes across the mesh.
-        This is done using the Heat Method [#1]_.
+        This is done using the Heat Method [#Crane]_.
 
         References
         ----------
-        .. [#1] Keenan Crane, Clarisse Weischedel, and Max Wardetzky. 2013.
+        .. [#Crane] Keenan Crane, Clarisse Weischedel, and Max Wardetzky. 2013.
            Geodesics in heat: A new approach to computing distance based on
            heat flow. ACM Trans. Graph. 32, 5, Article 152 (September 2013),
            11 pages https://doi.org/10.1145/2516971.2516977
@@ -161,9 +161,9 @@ class GeodesicPath():
 
         References
         ----------
-        .. [#1] Nicholas Sharp and Keenan Crane. 2020. You can find geodesic
-           paths in triangle meshes by just flipping edges. ACM Trans. Graph.
-           39, 6, Article 249 (December 2020), 15 pages.
+        .. [#Sharp] Nicholas Sharp and Keenan Crane. 2020. You can find
+           geodesic paths in triangle meshes by just flipping edges. ACM
+           Trans. Graph. 39, 6, Article 249 (December 2020), 15 pages.
            https://doi.org/10.1145/3414685.3417839
         '''
         pass
