@@ -156,8 +156,8 @@ class GeodesicPath():
         Notes
         -----
         A solver for the path between these two points uses edge flips to show
-        the path on the mesh [#1]_. Note that this path may not be the shortest
-        path, just a demonstration.
+        the path on the mesh [#Sharp]_. Note that this path may not be the
+        shortest path, just a demonstration.
 
         References
         ----------
