@@ -27,3 +27,11 @@ drawingto3D.geodesic\_path class
    :members:
    :undoc-members:
    :show-inheritance:
+
+drawingto3D.surface module
+--------------------------
+
+.. automodule:: drawingto3D.surface
+   :members:
+   :undoc-members:
+   :show-inheritance:
