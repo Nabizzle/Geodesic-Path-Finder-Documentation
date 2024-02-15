@@ -32,7 +32,7 @@ quickly be used multiple times. An even faster data loading method is
 implimented in `get_mesh_data` which converts to an .npz file that saves on
 data space and loads quickly.
 
-You map also note that face data is used twice. The face data is loaded by
+You may also note that face data is used twice. The face data is loaded by
 `potpourri3d` but it also parsed in `txt_to_dataframe` to return a lookup table
 for each UV on the 2D location drawing to each vertex on the 3D mesh.
 '''
