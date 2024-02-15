@@ -1,5 +1,12 @@
 drawingto3D package
 ===================
+Module contents
+---------------
+
+.. automodule:: drawingto3D
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Submodules
 ----------
@@ -16,14 +23,6 @@ drawingto3D.geodesic\_path class
 ---------------------------------
 
 .. automodule:: drawingto3D.geodesic_path
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: drawingto3D
    :members:
    :undoc-members:
    :show-inheritance:
