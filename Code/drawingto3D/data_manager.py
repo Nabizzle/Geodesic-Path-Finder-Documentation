@@ -16,6 +16,7 @@ find_moved_uv_indicies :
     Return only the UVs that are within the location drawing bounds.
 get_mesh_data :
     Saves out the mesh data from an obj file.
+load_mesh : Loads in the mesh and creates the geodesic solver.
 obj_to_txt :
     Takes in an OBJ mesh file and converts it into a text file.
 txt_to_dataframe :
@@ -38,6 +39,7 @@ for each UV on the 2D location drawing to each vertex on the 3D mesh.
 import numpy as np
 import polars as pl
 from typing import List, Tuple
+import potpourri3d as pp3d
 
 
 def create_combined_data(base_uv_data: Tuple[pl.DataFrame, pl.DataFrame],
@@ -158,6 +160,7 @@ def get_mesh_data(model_directory: str, obj_file: str,
     --------
     create_combined_data :
         Takes separate UV maps and lookup tables and combines them.
+    load_mesh : Loads in the mesh and creates the geodesic solver.
     txt_to_dataframe :
         Parses 3D mesh file in text format into the UV data and face lookup
         table.
@@ -167,6 +170,66 @@ def get_mesh_data(model_directory: str, obj_file: str,
     The OBJ mesh data is used to extract the vertex table and the mesh faces.
     The text file is used by the `txt_to_dataframe` method to find the UV data
     and the lookup table from each UV point to each vertex.
+    '''
+    pass
+
+
+def load_mesh(mesh_name: str,
+              data_path: str = "../Data"
+              ) -> Tuple[pp3d.MeshHeatMethodDistanceSolver,
+                         pp3d.EdgeFlipGeodesicSolver,
+                         np.ndarray, pl.DataFrame]:
+    '''
+    Loads in the mesh and creates the geodesic solver
+
+    Loads in mesh data based on the class attributes for the mesh and
+    creates a distance and path solver for the mesh
+    One line summary
+
+    Parameters
+    ----------
+    mesh_name : str
+        The name of the mesh, i.e. Male Left Arm, Male Right Arm, Female Left
+        Arm, Female Right Arm.
+    data_path : str
+        The relative path to the data folder containing the .npz file for the
+        mesh data saved from `get_mesh_data`.
+
+    Returns
+    -------
+    distance_solver : pp3d.MeshHeatMethodDistanceSolver
+        Heat method solver for the mesh.
+    path_solver : pp3d.MeshHeatMethodDistanceSolver
+        Geodesic path solver for the mesh.
+    uv_array : np.ndarry
+        The x and y positions of each UV point mapped to the mesh.
+    lookup_data : pl.DataFrame
+        The lookup table to match UV points with mesh verticies.
+
+    Notes
+    -----
+    The solvers created here are used to find the geodesic path, i.e. the
+    shortest path between any two points. This is done using the Heat Method
+    [1]_. A solver for the path between these two points is also made that uses
+    edge flips to show the path on the mesh [2]_. Note that this path may not
+    be the shortest path, just a demonstration.
+
+    References
+    ----------
+    .. [1] Keenan Crane, Clarisse Weischedel, and Max Wardetzky. 2013.
+       Geodesics in heat: A new approach to computing distance based on heat
+       flow. ACM Trans. Graph. 32, 5, Article 152 (September 2013), 11 pages
+       https://doi.org/10.1145/2516971.2516977
+    .. [2] Nicholas Sharp and Keenan Crane. 2020. You can find geodesic paths
+       in triangle meshes by just flipping edges. ACM Trans. Graph. 39, 6,
+       Article 249 (December 2020), 15 pages.
+       https://doi.org/10.1145/3414685.3417839
+
+
+    See Also
+    --------
+    get_mesh_data :
+        Saves out the mesh data from an obj file.
     '''
     pass
 
