@@ -12,6 +12,14 @@ drawingto3D.data\_manager module
    :undoc-members:
    :show-inheritance:
 
+drawingto3D.geodesic\_path module
+---------------------------------
+
+.. automodule:: drawingto3D.geodesic_path
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 
