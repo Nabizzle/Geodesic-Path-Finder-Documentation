@@ -16,7 +16,6 @@ Contents
 --------
 .. toctree::
    :maxdepth: 5
-   :caption: Contents:
 
    modules
 
@@ -26,3 +25,9 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+==================================
+Geodesic App and Mesh Manipulation
+==================================
+
+readme.rst
