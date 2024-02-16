@@ -30,4 +30,4 @@ Indices and tables
 Geodesic App and Mesh Manipulation
 ==================================
 
-readme.rst
+readme
