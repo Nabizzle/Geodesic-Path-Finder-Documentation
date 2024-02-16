@@ -1,7 +1,7 @@
 ====================
 Geodesic-Path-Finder
 ====================
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/App%20Icons/sheen%20robotic%20hand.png
+.. image:: "../../Media/App Icons/sheen robotic hand.png"
     :align: left
     :width: 200
 
