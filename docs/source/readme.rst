@@ -32,7 +32,7 @@ App Description
 ===============
 The app allow the user to find geodesic distance and path information in multiple ways.
 
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/App%20Photo.png
+.. image:: ../images/App_Photo.png
 
 The top row allows the user to select between male and female right and left arms. These correspond to the right and left location drawing images. The load mesh
 button must be pressed to load in the mesh data. For speed to loading, the mesh data has been presaved as compressed .npz files in the Data folder. Refer to the
@@ -49,7 +49,7 @@ match up with the dimensions of the `right <https://github.com/Nabizzle/Geodesic
 The fourth row of the app offers two additional ways of inputting starting and ending location information. The first two buttons in the row allow the user to click
 on the location drawings to manually set start and end locations. An example of the right location image is below:
 
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/right%20arm.png
+.. image:: ../images/right_arm.png
     :width: 300
 
 The final button of this row allow the user to load a table of starting and ending pixel values from a csv. The csv must start with headers for the start and end x
@@ -74,7 +74,7 @@ calculations are output as .mat files to the output folder in the Data folder an
 This button can be clicked at any time to see what has been added to polyscope. An example of a finished visualization with both the distance and path between
 verticies is shown here.
 
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/Path%20of%20the%20Right%20Arm%20Mesh.png
+.. image:: ..images/Path_of_the_Right_Arm_Mesh.png
     :width: 500
 
 A breakdown of how the app works behind the scenes is also in the
@@ -125,17 +125,17 @@ Surface Area Calculation
 ========================
 This code takes in a drawn boundary and converts it to `UV Coordinates`_.
 
-.. image:: https://github.com/CaseFNI/Geodesic-Path-Finder/assets/16357000/f6045840-c516-4fe6-be80-106df99e97fd
-.. image:: https://github.com/CaseFNI/Geodesic-Path-Finder/assets/16357000/57cc759d-720e-4170-bfec-062ffea919b5
+.. image:: ../images/original_boundary.png
+.. image:: ../images/uv_boundary.png
 
 This border is used to downselect from all possible UV points to only the UV points within and on the border.
 
-.. image:: https://github.com/CaseFNI/Geodesic-Path-Finder/assets/16357000/9db7168e-68f4-4c48-bfeb-f04ab55fa9ca
-.. image:: https://github.com/CaseFNI/Geodesic-Path-Finder/assets/16357000/84117729-0326-4ca1-b867-890c82945ce6
+.. image:: ../images/contained_uvs.png
+.. image:: ../images/uv_selection.png
 
 The corresponding verticies to these UV points are found and reconstructed into a 3D surface
 
-.. image:: https://github.com/CaseFNI/Geodesic-Path-Finder/assets/16357000/207e2636-18ab-43ce-beea-8fe68b9e77e6
+.. image:: ../images/location_surface.png
 
 This mesh is triangulated and the surface area is found by adding up all of the triangles.
 
@@ -150,18 +150,18 @@ Mapping the Male Mesh
 =====================
 For the male mesh, the model was scaled to fit with the location drawings as shown below:
 
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/Reference%20matching%20example.png
+.. image:: ../images/Reference_Matching_Example.png
     :width: 500
 
 Once the proportions were correct, then seams in the mesh were created to match with landmarks on the location drawings. An example of this on the male hand is
 below:
 
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/Example%20of%20making%20seams.png
+.. image:: ../images/Example_of_Making_Seams.png
     :width: 500
 
 Finally, these segments of the mesh are projected into the 2D space and moved into place over the location drawings as shown below for the hand:
 
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/UV%20Mapping%20example.png
+.. image:: ../images/UV_Mapping_Example.png
     :width: 500
 
 Mapping the Female Mesh
@@ -170,9 +170,9 @@ For the female mesh, the proportions of the body could not fit with the location
 have this step skipped. The seams and mapping of the mesh to the drawings were made in the same way as above, but some areas had to be stretched to map to the
 female body. Shown below is what that mapping looked like when the female mesh was skinned with the location drawings.
 
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/Female%20Mesh%20Blank.png
+.. image:: ../images/Female_Mesh_Blank.png
     :width: 400
-.. image:: https://github.com/Nabizzle/Geodesic-Path-Finder-Documentation/blob/main/Media/Female%20Mesh%20Mapped.png
+.. image:: ../images/Female_Mesh_Mapped.png
     :width: 400
 
 To avoid this issue mismatch between the drawings and the body, I would suggest female location drawings are made and the female mesh is mapped to them.
