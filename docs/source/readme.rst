@@ -1,7 +1,7 @@
 ====================
 Geodesic-Path-Finder
 ====================
-.. image:: ../images/App_Icons/sheen robotic hand.png
+.. image:: ../images/App_Icons/sheen_robotic_hand.png
     :align: left
     :width: 200
 
