@@ -26,7 +26,6 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-==================================
 Geodesic App and Mesh Manipulation
 ==================================
 .. toctree::
