@@ -74,7 +74,7 @@ calculations are output as .mat files to the output folder in the Data folder an
 This button can be clicked at any time to see what has been added to polyscope. An example of a finished visualization with both the distance and path between
 verticies is shown here.
 
-.. image:: ..images/Path_of_the_Right_Arm_Mesh.png
+.. image:: ../images/Path_of_the_Right_Arm_Mesh.png
     :width: 500
 
 A breakdown of how the app works behind the scenes is also in the
