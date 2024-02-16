@@ -15,7 +15,7 @@ surface area of a drawn location on the 3D model.
 Contents
 --------
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 3
 
    modules
 
@@ -29,5 +29,5 @@ Indices and tables
 ==================================
 Geodesic App and Mesh Manipulation
 ==================================
-
+.. toctree::
 readme
