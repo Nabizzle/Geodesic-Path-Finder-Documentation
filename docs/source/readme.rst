@@ -183,7 +183,6 @@ Structure of an OBJ File
 The meshes in this project were chosen to be .obj files because they have a nice human readable format that is explained in depth
 `here <https://all3dp.com/1/obj-file-format-3d-printing-cad/>`__. The main idea however is that the obj file is divded into sections for defining the mesh elements.
 
-===========
 Vertex Data
 ===========
 The first are all of the verticies were a line of the file has the format `v x y z` were `v` tell you that the line is for a vertex and the next three points are
